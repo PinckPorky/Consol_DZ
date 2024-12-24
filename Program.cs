@@ -30,7 +30,7 @@ namespace Consol_DZ
 
             StepLevel = decimal.Parse(str);
 
-            number();
+            number(); //??????????????????????????/
 
             Save();
 
@@ -43,7 +43,7 @@ namespace Consol_DZ
 
         #region Filds
 
-        static List<Level> levels;
+        static List<Level> levels; // почему не назначено место в памяти
 
         static decimal priceUp;
 
@@ -71,7 +71,7 @@ namespace Consol_DZ
                 {
                     stepLevel = value;
 
-                    levels = Level.CalculateLevels(priceUp, stepLevel, countLevels);
+                    levels = Level.CalculateLevels(priceUp, stepLevel, countLevels); // CalculateLevels что за метод?
                 }
             }
         }
